@@ -1,0 +1,83 @@
+@font-face {
+    font-family: 'Danjo-bold-Regular';
+    src: url('https://fastly.jsdelivr.net/gh/projectnoonnu/noonfonts_2307-1@1.1/Danjo-bold-Regular.woff2') format('woff2');
+    font-weight: normal;
+    font-style: normal;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Danjo-bold-Regular, serif;
+    color: #FCF6F5;
+    background-color: #7b9acc;
+}
+
+button, input {
+    background-color: #FCF6F5;
+    color: #7b9acc;
+    border: 1px solid transparent;
+    border-radius: 2px;
+    padding: 2px;
+}
+
+figure {
+    width: 100%;
+    /*padding: 2rem;*/
+    margin: 1rem 0;
+    aspect-ratio: 2 / 1;
+    overflow: hidden;
+    position: relative;
+    border-radius: 8px;
+}
+
+figure > img {
+    /*border-radius: 8px;*/
+    position: absolute;
+    top: 35%; /* 이미지를 이동 */
+    left: 50%; /* 이미지를 수평 중앙으로 이동 */
+    transform: translate(-50%, -50%); /* 이미지 자체 크기만큼 이동하여 완벽한 중앙 정렬 */
+    width: 100%;
+    height: auto; /* 이미지 높이는 자동으로 조절 */
+}
+
+main {
+    margin: auto;
+    max-width: 576px;
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 1rem;
+    gap: 0.5rem;
+}
+
+section {
+    width: 100%;
+}
+
+section > form {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 0.5rem;
+}
+
+section > form * {
+    width: 100%;
+}
+
+section > form input {
+    padding: 4px;
+}
+
+section > form button {
+    padding: 6px;
+    width: 180px;
+}
